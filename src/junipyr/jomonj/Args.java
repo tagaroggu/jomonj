@@ -75,6 +75,9 @@ public class Args {
                 case "-w":
                     this.waveWidth = Integer.parseInt(args[++idx]);
                     break;
+                case "-b":
+                    this.borderCount = Integer.parseInt(args[++idx]);
+                    break;
                 case "-1":
                     this.randomSort = true;
                     break;
