@@ -12,7 +12,6 @@ Helpful info can be printed with `java -cp bin junipyr.jomonj.JomonJ -h`
 
 - [ ] Feature parity with original project
     - [ ] Verbosity
-    - [ ] Random sort
-        - [ ] Classes that handle the sorting?
+    - [x] Random sort
 
 - [ ] Pull in args from `Args.getArgs()` where needed instead passing args object around

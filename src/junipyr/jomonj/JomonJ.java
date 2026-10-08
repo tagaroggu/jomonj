@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.io.File;
 import java.io.FileOutputStream;
 import java.io.IOException;
+import java.util.Collections;
 
 public class JomonJ {
     public static void main(String[] args) {
@@ -38,7 +39,12 @@ public class JomonJ {
             circleList.add(new Circle(x, y, radius));
         }
 
-        circleList.sort(null);
+        if (!arg.randomSort) {
+            circleList.sort(null);
+        } else {
+            Collections.shuffle(circleList, arg.rng);
+        }
+
         byte[] imageBuffer = new byte[arg.width * arg.height * 3];
 
         for (int x = 0; x < arg.width; x++) {
